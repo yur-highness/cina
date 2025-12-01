@@ -53,11 +53,11 @@ export interface NewsArticle {
   readTime: string;
 }
 
-export enum AppRoute {
-  HOME = '/',
-  DETAILS = '/movie/:id',
-  BOOKING = '/booking/:id',
-  TICKETS = '/tickets',
-  AI_CHAT = '/ai-chat',
-  NEWS = '/news',
-}
+export const AppRoute = {
+  HOME: '/',
+  DETAILS: '/movie/:id',
+  BOOKING: '/booking/:id',
+  TICKETS: '/tickets',
+  AI_CHAT: '/ai-chat',
+  NEWS: '/news',
+} as const;
